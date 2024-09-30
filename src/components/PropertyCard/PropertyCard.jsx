@@ -48,7 +48,7 @@ const PropertyCard = ({ price, mainImage, propertyTitle, displayAddress, branchN
     );
 };
 
-PropertyCard.propTypes = {
+export const PropertyPropType = {
     summary: PropTypes.string,
     displayAddress: PropTypes.string,
     propertyType: PropTypes.oneOf([
@@ -72,4 +72,6 @@ PropertyCard.propTypes = {
     mainImage: PropTypes.string,
 };
 
+
+PropertyCard.propTypes = PropertyPropType;
 export default PropertyCard;
